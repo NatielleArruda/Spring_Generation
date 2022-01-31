@@ -85,7 +85,7 @@ public class ProdutoController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 
-	// Consulta pelo preço maior do que o preço digitado emm ordem crescente
+	
 	
 	@GetMapping("/preco_maior/{preco}")
 	public ResponseEntity<List<Produto>> getPrecoMaiorQue(@PathVariable BigDecimal preco){ 
